@@ -1,3 +1,19 @@
-.puto {
-    background: yellowgreen;
+.footer-contenido {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.footer-columna {
+    padding: 20px
+}
+.cp {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.test{
+    color: red;
+    background-color: yellow;
 }
