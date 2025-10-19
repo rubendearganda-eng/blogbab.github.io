@@ -3,6 +3,8 @@
     justify-content: center;
     gap: 50px;
     margin-bottom: 20px;
+    background-color: black;
+    color: white;
 }
 .footer-columna {
     padding: 20px
