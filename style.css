@@ -7,12 +7,18 @@
     color: white;
 }
 /* contenedor centrado y ancho máximo para el contenido del footer */
-.footer-container {
+.footer-contenido {
     width: 100%;
     max-width: 900px;
+    display: flex;            /* muestra columnas lado a lado */
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
 }
-/* columna única que contiene Información y Redes Sociales */
+/* cada columna del footer */
 .footer-column {
+    flex: 1;                  /* repartir espacio entre columnas */
+    min-width: 200px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -20,9 +26,17 @@
 }
 /* separador y texto centrado para el copyright */
 .cp {
+    width: 100%;
+    max-width: 900px;
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.25);
     padding-top: 20px;
     margin-top: 20px;
-    width: 100%;
+}
+/* respuesta para pantallas pequeñas: apilar columnas */
+@media (max-width: 600px) {
+    .footer-contenido {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
