@@ -1,25 +1,28 @@
 .footer-bg {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 20px;
+    flex-direction: column; /* apila contenido verticalmente */
+    align-items: center;
+    padding: 40px 20px;
     background: linear-gradient(to right, #0caada, #0c61da);
     color: white;
 }
-.footer-columna {
-    padding: 20px
+/* contenedor centrado y ancho máximo para el contenido del footer */
+.footer-container {
+    width: 100%;
+    max-width: 900px;
 }
+/* columna única que contiene Información y Redes Sociales */
+.footer-column {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* separador y texto centrado para el copyright */
 .cp {
     text-align: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid rgba(255,255,255,0.25);
     padding-top: 20px;
     margin-top: 20px;
-}
-.test{
-    color: red;
-    background-color: yellow;
-}
-.navegador {
-    display: flex;
-    gap: 20px;
+    width: 100%;
 }
