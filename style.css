@@ -21,6 +21,3 @@
     display: flex;
     gap: 20px;
 }
-.background{
-    background: gradiant(to right, #ff7e5f, #feb47b);
-}
