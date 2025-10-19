@@ -1,9 +1,9 @@
-.footer-contenido {
+footer {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-bottom: 20px;
-    background-color: black;
+    background: linear-gradient(to right, #0caada, #0c61da);
     color: white;
 }
 .footer-columna {
