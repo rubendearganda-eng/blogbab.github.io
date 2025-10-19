@@ -40,3 +40,7 @@
         gap: 16px;
     }
 }
+.navegador {
+    display: flex;
+    gap: 20px;
+}
