@@ -17,3 +17,8 @@
     color: red;
     background-color: yellow;
 }
+.navegador {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
