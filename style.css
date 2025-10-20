@@ -1,31 +1,31 @@
 .footer-bg {
     display: flex;
-    flex-direction: column; /* apila contenido verticalmente */
+    flex-direction: column; 
     align-items: center;
     padding: 40px 20px;
     background: linear-gradient(to right, #0caada, #0c61da);
     color: white;
     margin-top: auto;
 }
-/* contenedor centrado y ancho máximo para el contenido del footer */
+
 .footer-contenido {
     width: 100%;
     max-width: 900px;
-    display: flex;            /* muestra columnas lado a lado */
+    display: flex;            
     gap: 40px;
     justify-content: center;
     align-items: flex-start;
 }
-/* cada columna del footer */
+
 .footer-column {
-    flex: 1;                  /* repartir espacio entre columnas */
+    flex: 1;                  
     min-width: 200px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-/* separador y texto centrado para el copyright */
+
 .cp {
     width: 100%;
     max-width: 900px;
@@ -34,7 +34,6 @@
     padding-top: 20px;
     margin-top: 20px;
 }
-/* respuesta para pantallas pequeñas: apilar columnas */
 @media (max-width: 600px) {
     .footer-contenido {
         flex-direction: column;
@@ -44,4 +43,5 @@
 .navegador {
     display: flex;
     gap: 20px;
+    text-align: center;
 }
