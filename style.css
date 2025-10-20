@@ -6,6 +6,7 @@
     background: linear-gradient(to right, #0caada, #0c61da);
     color: white;
     margin-top: auto;
+    align-self: auto;
 }
 
 .footer-contenido {
@@ -40,8 +41,8 @@
         gap: 16px;
     }
 }
-.navegador {
-    text-align: center;
+.nav {
+    text-align: center;;
     display: flex;
     gap: 20px;
 }
