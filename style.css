@@ -5,6 +5,7 @@
     padding: 40px 20px;
     background: linear-gradient(to right, #0caada, #0c61da);
     color: white;
+    margin-top: auto;
 }
 /* contenedor centrado y ancho máximo para el contenido del footer */
 .footer-contenido {
