@@ -5,50 +5,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Bit a Bit - Blog de Tecnología</title>
+    <meta name="description" content="Blog de tecnología con las últimas noticias sobre IA, ciberseguridad, desarrollo web y más">
     <link rel="stylesheet" href="./style.css">
-    <title>Titulo</title>
     <link rel="icon" type="image/png" href="./img/icon.png">
-
-    <!-- Refresco (Eliminar al finalizar) -->
-    <script>
-        setInterval(() => location.reload(), 10000);
-    </script>
-    <!-- Refresco (Eliminar al finalizar) -->
+    <script src="./script.js"></script>
 </head>
-
 <body>
-    <header>
-        <div class="nav">
-            <div>
-                <h4><a href="index.html"></a>
-                    <h4>Inicio</h4>
-                </h4> <a href="about.html">
-                    <h4>Sobre mí</h4>
-                </a> <a href="noticias.html">
-                    <h4>Noticias</h4>
-                </a> <a href="contact.html">
-                    <h4>Contacto</h4>
-                </a>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="brand" role="heading" aria-level="1">De Bit a Bit</div>
+            <div class="nav-menu">
+                <a href="#inicio"><h4 class="nav-item">Inicio</h4></a>
+                <a href="#sobre-mi"><h4 class="nav-item">Sobre mí</h4></a>
+                <a href="#noticias"><h4 class="nav-item">Noticias</h4></a>
+                <a href="#contacto"><h4 class="nav-item">Contacto</h4></a>
             </div>
-            <div>
-                <h1>Título </h1>
-            </div>
-        </div>
+            <div class="nav-right"></div>
+        </nav>
     </header>
+    <main id="inicio">
+        <h2 class="news-title">Últimas noticias</h2>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev-btn" onclick="scrollSlider('left')"></button>
+            <div class="slider-container" id="slider">
+                <article class="slider-item news-article" onclick="window.open('noticias.html#noticia1', '_blank')">
+                    <div class="image-wrapper">
+                        <img src="https://www.adeccoinstitute.es/wp-content/uploads/2020/01/Inteligencia-Artificial-en-Industria.gif"
+                            alt="Avances IA">
+                        <div class="image-caption">Avances en IA: nuevos modelos y aplicaciones.</div>
+                    </div>
+                    <div class="news-content">
+                        <h4 class="news-headline">Nuevos Avances en Inteligencia Artificial Transforman la Industria
+                        </h4>
+                        <p class="news-summary">Descubre cómo los últimos desarrollos en IA están revolucionando
+                            sectores desde la salud hasta la educación.</p>
+                    </div>
+                </article>
+                <article class="slider-item news-article" onclick="window.open('noticias.html#noticia2', '_blank')">
+                    <div class="image-wrapper">
+                        <img src="https://apd-images.imgix.net/uploads/sites/2/2025/06/amenazas-de-ciberseguridad.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=1750abb54201892a72918b3f990a6fe7"
+                            alt="Ciberseguridad">
+                        <div class="image-caption">Ciberseguridad: nuevas amenazas y defensas.</div>
+                    </div>
+                    <div class="news-content">
+                        <h4 class="news-headline">Ciberseguridad: Las Nuevas Amenazas del 2025</h4>
+                        <p class="news-summary">Análisis de las principales vulnerabilidades y cómo las empresas se
+                            están adaptando a los nuevos retos digitales.</p>
+                    </div>
+                </article>
+                <article class="slider-item news-article" onclick="window.open('noticias.html#noticia3', '_blank')">
+                    <div class="image-wrapper">
+                        <img src="https://blogs.uoc.edu/informatica/wp-content/uploads/sites/153/2023/10/collage-fondo-programacion-768x513.jpg"
+                            alt="Desarrollo web">
+                        <div class="image-caption">Tendencias del desarrollo web en 2025.</div>
+                    </div>
+                    <div class="news-content">
+                        <h4 class="news-headline">El Futuro del Desarrollo Web: Tendencias 2025</h4>
+                        <p class="news-summary">Explora las tecnologías emergentes que están definiendo el desarrollo
+                            web moderno y su impacto en la experiencia de usuario.</p>
+                    </div>
+                </article>
+            </div>
+            <button class="slider-btn next-btn" onclick="scrollSlider('right')"></button>
+        </div>
+    </main>
+
+    <section id="sobre-mi" class="about-section">
+        <div class="about-content">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy un apasionado de la tecnología y me encanta compartir las últimas noticias y tendencias del mundo digital. En "De Bit a Bit" encontrarás información actualizada sobre inteligencia artificial, ciberseguridad, desarrollo web y mucho más.</p>
+            <p>Mi objetivo es hacer accesible la información tecnológica para todos, desde principiantes hasta expertos. Cada artículo está pensado para informarte y inspirarte en este fascinante mundo de la tecnología.</p>
+        </div>
+    </section>
+
+    <section class="section-divider">
+        <span>Más titulares</span>
+    </section>
+
+    <section id="noticias" class="news-sections">
+            <a class="news-card" href="noticias.html#noticia1">
+                <img src="https://www.adeccoinstitute.es/wp-content/uploads/2020/01/Inteligencia-Artificial-en-Industria.gif" alt="Avances en IA">
+                <div class="news-card-body">
+                    <h4>Nuevos Avances en Inteligencia Artificial Transforman la Industria</h4>
+                    <p>Descubre cómo los últimos desarrollos en IA están revolucionando sectores desde la salud hasta la educación.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia2">
+                <img src="https://apd-images.imgix.net/uploads/sites/2/2025/06/amenazas-de-ciberseguridad.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=1750abb54201892a72918b3f990a6fe7" alt="Ciberseguridad 2025">
+                <div class="news-card-body">
+                    <h4>Ciberseguridad: Las Nuevas Amenazas del 2025</h4>
+                    <p>Análisis de las principales vulnerabilidades y cómo las empresas se están adaptando a los nuevos retos digitales.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia3">
+                <img src="https://blogs.uoc.edu/informatica/wp-content/uploads/sites/153/2023/10/collage-fondo-programacion-768x513.jpg" alt="Tendencias desarrollo web">
+                <div class="news-card-body">
+                    <h4>El Futuro del Desarrollo Web: Tendencias 2025</h4>
+                    <p>Explora las tecnologías emergentes que están definiendo el desarrollo web moderno y su impacto en la experiencia de usuario.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia4">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" alt="Computación en la nube">
+                <div class="news-card-body">
+                    <h4>Cloud: Cómo la Nube Está Redefiniendo la Escalabilidad</h4>
+                    <p>Empresas migran cargas críticas a la nube para ganar agilidad, resiliencia y ahorro de costes.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia5">
+                <img src="https://soydigital.ai/wp-content/uploads/2025/06/tendencias-en-automatizacion-y-agentes-ia-rapida-en-2026.jpg" alt="Datos e IA">
+                <div class="news-card-body">
+                    <h4>Datos + IA: Decisiones Más Rápidas y Precisas</h4>
+                    <p>La analítica en tiempo real impulsa nuevos modelos de negocio basados en predicción.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia6">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=80" alt="Gadgets y hardware">
+                <div class="news-card-body">
+                    <h4>Nuevos Gadgets: Más Batería, Menos Peso</h4>
+                    <p>Los últimos dispositivos apuestan por eficiencia energética y materiales sostenibles.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia7">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80" alt="Videojuegos y eSports">
+                <div class="news-card-body">
+                    <h4>Gaming 2025: Ray Tracing y eSports en Auge</h4>
+                    <p>Las GPUs de nueva generación elevan el listón gráfico y el competitivo sigue creciendo.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia8">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80" alt="Tecnología espacial">
+                <div class="news-card-body">
+                    <h4>Espacio: Satélites Más Pequeños, Mayor Cobertura</h4>
+                    <p>Las constelaciones LEO mejoran comunicaciones y observación de la Tierra.</p>
+                </div>
+            </a>
+            <a class="news-card" href="noticias.html#noticia9">
+                <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80" alt="Tecnología verde">
+                <div class="news-card-body">
+                    <h4>Tecnología Verde: Innovar Reduciendo la Huella</h4>
+                    <p>Soluciones limpias para data centers, movilidad y hogares inteligentes.</p>
+                </div>
+            </a>
+    </section>
+    <section id="contacto" class="form-section" aria-labelledby="form-title">
+        <h2 id="form-title">Contacto</h2>
+        <p class="form-note">¡Ponte en contacto conmigo! Me encantaría saber de ti.</p>
+        <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="btn primary">Enviar</button>
+        </form>
+    </section>
 
     <footer class="footer-bg">
         <div class="footer-contenido">
             <div class="footer-column">
                 <h3>Información</h3>
-                <h5> <a href="about.html">Sobre mí</a></h5>
-                <h5> <a href="contact.html">Contacto</a></h5>
-                <h5> <a href="politica.html">Política de privacidad</a></h5>
+                <h5><a href="#sobre-mi">Sobre mí</a></h5>
+                <h5><a href="#contacto">Contacto</a></h5>
+                <h5><a href="#noticias">Noticias</a></h5>
             </div>
             <div class="footer-column">
                 <h3>Redes Sociales</h3>
-                <h5> <a href="https://Facebook.com">Facebook</a></h5>
-                <h5> <a href="https://x.com">Twitter</a></h5>
-                <h5> <a href="https://instagram.com">Instagram</a></h5>
+                <h5><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></h5>
+                <h5><a href="https://x.com" target="_blank" rel="noopener">Twitter</a></h5>
+                <h5><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></h5>
             </div>
         </div>
         <div class="cp">
@@ -56,6 +191,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>
